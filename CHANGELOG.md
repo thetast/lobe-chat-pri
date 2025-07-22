@@ -2,6 +2,139 @@
 
 # Changelog
 
+### [Version 1.102.3](https://github.com/lobehub/lobe-chat/compare/v1.102.2...v1.102.3)
+
+<sup>Released on **2025-07-22**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Remove debug logging from ModelRuntime and async caller.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Remove debug logging from ModelRuntime and async caller, closes [#8525](https://github.com/lobehub/lobe-chat/issues/8525) ([dd1a635](https://github.com/lobehub/lobe-chat/commit/dd1a635))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.102.2](https://github.com/lobehub/lobe-chat/compare/v1.102.1...v1.102.2)
+
+<sup>Released on **2025-07-22**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add notification for desktop.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add notification for desktop, closes [#8523](https://github.com/lobehub/lobe-chat/issues/8523) ([4917d17](https://github.com/lobehub/lobe-chat/commit/4917d17))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.102.1](https://github.com/lobehub/lobe-chat/compare/v1.102.0...v1.102.1)
+
+<sup>Released on **2025-07-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **groq**: Enable streaming for tool calls and add Kimi K2 model.
+
+#### 💄 Styles
+
+- **misc**: Modal list header sticky style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **groq**: Enable streaming for tool calls and add Kimi K2 model, closes [#8510](https://github.com/lobehub/lobe-chat/issues/8510) ([60739bc](https://github.com/lobehub/lobe-chat/commit/60739bc))
+
+#### Styles
+
+- **misc**: Modal list header sticky style, closes [#8514](https://github.com/lobehub/lobe-chat/issues/8514) ([75273d5](https://github.com/lobehub/lobe-chat/commit/75273d5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.102.0](https://github.com/lobehub/lobe-chat/compare/v1.101.2...v1.102.0)
+
+<sup>Released on **2025-07-21**</sup>
+
+#### ✨ Features
+
+- **misc**: Add image generation capabilities using Google AI Imagen API.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add image generation capabilities using Google AI Imagen API, closes [#8503](https://github.com/lobehub/lobe-chat/issues/8503) ([cef8208](https://github.com/lobehub/lobe-chat/commit/cef8208))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.101.2](https://github.com/lobehub/lobe-chat/compare/v1.101.1...v1.101.2)
+
+<sup>Released on **2025-07-21**</sup>
+
+#### 💄 Styles
+
+- **misc**: Fix lobehub provider `/chat` in desktop.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Fix lobehub provider `/chat` in desktop, closes [#8508](https://github.com/lobehub/lobe-chat/issues/8508) ([c801f9c](https://github.com/lobehub/lobe-chat/commit/c801f9c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.101.1](https://github.com/lobehub/lobe-chat/compare/v1.101.0...v1.101.1)
 
 <sup>Released on **2025-07-19**</sup>
