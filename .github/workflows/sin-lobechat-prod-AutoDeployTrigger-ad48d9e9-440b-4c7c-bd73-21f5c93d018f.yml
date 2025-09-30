@@ -1,0 +1,49 @@
+name: Trigger auto deployment for sin-lobechat-prod
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/sin-lobechat-prod-AutoDeployTrigger-ad48d9e9-440b-4c7c-bd73-21f5c93d018f.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.SINLOBECHATPROD_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.SINLOBECHATPROD_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.SINLOBECHATPROD_AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }}
+          _dockerfilePathKey_: _dockerfilePath_
+          _targetLabelKey_: _targetLabel_
+          registryUrl: 
+          registryUsername: ${{ secrets.SINLOBECHATPROD_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.SINLOBECHATPROD_REGISTRY_PASSWORD }}
+          containerAppName: sin-lobechat-prod
+          resourceGroup: RG-Socks-V3-SA
+          imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
+
+
